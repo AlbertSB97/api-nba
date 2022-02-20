@@ -1,0 +1,55 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+allTeams:
+  path: /equipos
+  controller: App\Controller\EquiposController::getAllTeams
+
+teamsPlayers:
+  path: /equipo/jugadores
+  controller: App\Controller\EquiposController::getTeamsPlayers
+
+teamPlayersByName:
+  path: /equipo/jugadores/{nombre}
+  controller: App\Controller\EquiposController::getTeamPlayersByName
+
+teamByName:
+  path: /equipos/{nombre}
+  controller: App\Controller\EquiposController::getTeamByName
+
+allPlayers:
+  path: /jugadores
+  controller: App\Controller\JugadoresController::getAllPlayers
+
+playerPhysiqueByName:
+  path: /jugador/fisico/{nombre}
+  controller: App\Controller\JugadoresController::getPlayerPhysiqueByName
+
+playerByName:
+  path: /jugadores/{nombre}
+  controller: App\Controller\JugadoresController::getPlayerByName
+
+statisticsByNameAvg:
+  path: /estadisticas/jugador/{nombre}/avg
+  controller: App\Controller\EstadisticasController::getStatisticsByNameAvg
+
+statisticsByName:
+  path: /estadisticas/jugador/{nombre}
+  controller: App\Controller\EstadisticasController::getStatisticsByName
+
+homeMatchesByName:
+  path: /partidos/resultados/local/{nombre}
+  controller: App\Controller\PartidosController::getResultsHomeByName
+
+awayMatchesByName:
+  path: /partidos/resultados/visitante/{nombre}
+  controller: App\Controller\PartidosController::getResultsAwayByName
+
+homeMatchesByNameAvg:
+  path: /partidos/resultados/media/local/{nombre}
+  controller: App\Controller\PartidosController::getResultsHomeByNameAvg
+
+awayMatchesByNameAvg:
+  path: /partidos/resultados/media/visitante/{nombre}
+  controller: App\Controller\PartidosController::getResultsAwayByNameAvg
