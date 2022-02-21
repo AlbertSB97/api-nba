@@ -75,14 +75,6 @@ class Jugadores implements \JsonSerializable
     }
 
     /**
-     * @param int $codigo
-     */
-    public function setCodigo(int $codigo): void
-    {
-        $this->codigo = $codigo;
-    }
-
-    /**
      * @return string|null
      */
     public function getNombre(): ?string

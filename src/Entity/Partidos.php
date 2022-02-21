@@ -71,14 +71,6 @@ class Partidos implements \JsonSerializable
     }
 
     /**
-     * @param int $codigo
-     */
-    public function setCodigo(int $codigo): void
-    {
-        $this->codigo = $codigo;
-    }
-
-    /**
      * @return int|null
      */
     public function getPuntosLocal(): ?int
